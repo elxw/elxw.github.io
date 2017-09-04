@@ -1,0 +1,11 @@
+
+/* class with . */
+.text {
+    color: gold;
+}
+
+/* selecting an ID */
+#title{
+    color: purple;
+    font-size: 50
+}
