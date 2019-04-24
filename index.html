@@ -4,169 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Twitter feed</title>
-
-
-    <style>
-    html,
-    body {
-      height: 100%;
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-    }
-
-    body {
-       font-family: 'Avenir';
-       text-align:center;
-    }
-
-    html { 
-      background: url(assets/freezydreamin-1491615-unsplash.jpg) no-repeat center center fixed; 
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-
-    .flex-container {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      
-      -webkit-flex-flow: row wrap;
-      justify-content: space-around;
-    }
-
-    .heading {
-      line-height: 150px;
-      color: white;
-      font-weight: bold;
-      font-size: 2em;
-      text-align: center;
-    }
-
-    .content {
-      color: #cecece;
-      font-size: 1em;
-      text-align: center;
-    }
-
-    .flex-item {
-      margin: 20px;
-      background-color: rgba(255,255,255,0.9);
-      box-shadow: 0 0 30px #333;
-      width: 250px;
-      height: 250px;
-
-    }
-
-    .flex-item img {
-      width: 250px;
-    }
-
-    .image {
-      width: 250px;
-      height: 250px;
-      background-color: black;
-    }
-
-    .card-body {
-      padding: 5px;
-      margin-top: 0;
-      top: 0;
-    }
-
-    .card-title {
-      font-weight: bold;
-      font-size: 18px;
-      text-align: center;
-      top: 0;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    .image .btn {
-      top: -200px;
-      position: relative;
-      display: inline-block;
-      width: 150px;
-      padding: 20px 30px;
-      border: 2px solid white;
-      line-height: 1; 
-      font: 600 12px 'Montserrat', sans-serif;
-      text-align: center;
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      color: white;
-      transition: all 0.25s ease;
-      appearance: none; 
-      background-color: none;
-      visibility: hidden;
-    }
-
-    .desc {
-      top: -200px;
-      position: relative;
-      visibility: hidden;
-      font: 400 12px 'Montserrat', sans-serif;
-      color: white;
-      letter-spacing: 1.5px;
-      padding: 10px;
-
-    }
-
-    .flex-item:hover .btn {
-      visibility: visible;
-    }
-
-    .flex-item:hover img {
-      opacity: 0.3;
-      transition: all 0.25s ease;
-    }
-
-    .flex-item:hover .desc {
-      visibility: visible;
-    }
-
-    .image .btn:hover {
-      color: #333;
-      background-color: white;
-    }
-
-
-    .card-text{
-      font-size: 14px;
-      color: #1c1c1c;
-    }
-
-
-    h1, p {
-      color: #cecece;
-    }
-
-    /** { border: .5px solid red; }*/
-
-   </style>
+    <title>Echo Wang</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
   </head>
+
   <body>
-    <div style="margin-bottom: auto;">
-      <h1>This site is temporarily down for maintenance (˃̣̣̥⌓˂̣̣̥⋆)</h1>
-      <p>Here are some of my projects you can check out in the meantime:</p>
+    <div id="particles-js"></div>
+
+    <div class="flex-container-col" style="height: 600px;">
+      <p id="name" class="top"> Echo Wang </p>
+      <p id="title" class="top"> This site is temporarily down for maintenance (˃̣̣̥⌓˂̣̣̥⋆)</p>
+      <p id="subtitle" class="top"> But you can scroll down to check out some of my projects in the meantime! </p>
     </div>
 
-    <div class="flex-container">
+    <div class="flex-container" style="margin-top: 20%;">
      
       <div class="flex-item">
         <div class="image">
-          <img src="main/images/br.png">
+          <img src="main/images/br-2.png">
           <a href="http://boxdrecs.herokuapp.com/" target=_blank class="btn">BoxdRecs</a>
           <div class="desc">Final project for Applied Machine Learning course that computed movie recommendations based on data from the Letterboxd site.</div>
         </div>
@@ -222,8 +77,10 @@
 
     </div>
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/config.js"></script>
+
   </body>
 </html>
